@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>documento sin título</title>
+<link href="../Css/style_page.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<header>
+  <h1>formularios</h1>
+</header>
+<nav>
+	<ul id="menu">
+     <li><a href="mi_primer_archivo_formatos de texto.html">formularios de texto</a></li>
+    <li><a href="listas.html">listas en html</a></li>
+			<li><a href="enlaces.html">enlaces en html</a></li>
+			<li><a href="tablas.html">tablas en html</a></li>
+			<li><a href="imagenes.html">imagenes</a></li>
+			<li><a href="audio.html">audio</a></li>
+	<li><a href="videos.html">videos en html</a></li>
+	  <li><a href="../index.html">inicio</a></li>
+  </ul>
+	</nav>
+<main>
+  <section>
+    <h2>formulario</h2>
+    <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. duis at turpis et ligula condimentum posuere eget nec nisl. aliquam varius nulla vel diam porta, vitae dictum sem dignissim. nulla convallis orci eros, eget venenatis ligula pharetra sed. quisque semper, ex vel tempor rhoncus, neque orci consequat lectus, eget aliquet lorem. lorem ipsum dolor sit amet, consectetur adipiscing elit. duis at turpis et ligula condimentum posuere eget nec nisl. aliquam varius nulla vel diam porta, vitae dictum sem dignissim. nulla convallis orci eros, eget venenatis ligula pharetra sed. quisque semper, ex vel tempor rhoncus, neque orci consequat lectus, eget aliquet lore</p>
+    <form id="form1" name="form1" method="get">
+      <label for="nombre">nombre:</label>
+      <input type="text" name="nombre" id="nombre">
+		<br><br>
+		<label for="apellido">apellido:</label>
+    <input type="text" name="apellido" id="apellido">
+		<br><br>
+    <input type="submit" name="Boton1" id="Boton1" value="enviar">
+    </form>
+  </section>
+  <section>
+    <h2>formulario usando select, checkbox  y radiobutton</h2>
+    <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. duis at turpis et ligula condimentum posuere eget nec nisl. aliquam varius nulla vel diam porta, vitae dictum sem dignissim. nulla convallis orci eros, eget venenatis ligula pharetra sed. quisque semper, ex vel tempor rhoncus, neque orci consequat lectus, eget aliquet lorem. lorem ipsum dolor sit amet, consectetur adipiscing elit. duis at turpis et ligula condimentum posuere eget nec nisl. aliquam varius nulla vel diam porta, vitae dictum sem dignissim. nulla convallis orci eros, eget venenatis ligula pharetra sed. quisque semper, ex vel tempor rhoncus, neque orci consequat lectus, eget aliquet lore</p>
+    <form id="form2" name="form2" method="post">
+      <label for="select">¿de qué país nos visistas?</label>
+      <select name="pais" id="pais">
+        <option value="MX">méxico</option>
+        <option value="US">estados unidos</option>
+        <option value="ES">españa</option>
+        <option value="AR">argentina</option>
+        <option value="IT">italia</option>
+        <option value="UK">reino unido</option>
+      </select><br> <br>
+		<label>genero&nbsp;</label>
+	  <p>
+	    <label>
+		    <input type="radio" name="RadioGroup1" value="Mujer " id="RadioGroup1_0">
+		    mujer</label>
+		  <br>
+		  <label>
+		    <input type="radio" name="RadioGroup1" value="Hombre" id="RadioGroup1_1">
+		    hombre</label>
+		  <br><br>
+	  </p>
+	  <label>¿donde se hospedará?</label>
+	  <table width="200" id="residencia_temporal">
+	    <tr>
+	      <td><label>
+	        <input type="checkbox" name="Residencia_temporal" value="Hotel" id="Residencia_temporal_0">
+	        &nbsp;hotel</label></td>
+        </tr>
+	    <tr>
+	      <td><label>
+	        <input type="checkbox" name="Residencia_temporal" value="Particular">
+	        &nbsp;domicilio de amigos/familia</label></td>
+        </tr>
+	    <tr>
+	      <td><label>
+	        <input type="checkbox" name="Residencia_temporal" value="Airbnb" id="Residencia_temporal_2">
+	        &nbsp;airbnb</label></td>
+        </tr>
+      </table>
+<br> 
+<input type="submit" name="boton2" id="boton2" value="enviar">
+    </form>
+  </section>
+  <section>
+    <h2>formulario de texto, correo, área de texto&nbsp;&nbsp;</h2>
+    <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. duis at turpis et ligula condimentum posuere eget nec nisl. aliquam varius nulla vel diam porta, vitae dictum sem dignissim. nulla convallis orci eros, eget venenatis ligula pharetra sed. quisque semper, ex vel tempor rhoncus, neque orci consequat lectus, eget aliquet lorem. lorem ipsum dolor sit amet, consectetur adipiscing elit. duis at turpis et ligula condimentum posuere eget nec nisl. aliquam varius nulla vel diam porta, vitae dictum sem dignissim. nulla convallis orci eros, eget venenatis ligula pharetra sed. quisque semper, ex vel tempor rhoncus, neque orci consequat lectus, eget aliquet lore</p>
+    <form action="procesamiento.html" method="get" name="form3" id="form3" autocomplete="off">
+      <label for="nombre3">nombre:</label>
+      <input name="nombre3" type="text" required="required" id="nombre3" form="form3" autocomplete="on">
+      <label for="email">email:</label>
+      <input name="email" type="email" id="email">
+      <label for="mensaje">mensaje:</label>
+      <textarea name="mensaje" rows="6" maxlength="150" id="mensaje" placeholder="escribe tu mensaje..."></textarea>
+      <input name="Boton3" type="submit" id="Boton3" value="enviar">
+    </form>
+  </section>
+  <section>
+    <h2>formulario para recibir un regalo</h2>
+    <p>lorem ipsum dolor sit amet, consectetur adipiscing elit. duis at turpis et ligula condimentum posuere eget nec nisl. aliquam varius nulla vel diam porta, vitae dictum sem dignissim. nulla convallis orci eros, eget venenatis ligula pharetra sed. quisque semper, ex vel tempor rhoncus, neque orci consequat lectus, eget aliquet lorem. lorem ipsum dolor sit amet, consectetur adipiscing elit. duis at turpis et ligula condimentum posuere eget nec nisl. aliquam varius nulla vel diam porta, vitae dictum sem dignissim. nulla convallis orci eros, eget venenatis ligula pharetra sed. quisque semper, ex vel tempor rhoncus, neque orci consequat lectus, eget aliquet lore</p>
+    <form id="form4" name="form4" method="post">
+      <label>coloca tus datos para enviarte un regalo de cumpleaños por apoyar a the vamps&nbsp;&nbsp;</label>
+      <br><br>
+      <label for="Nombre_4">nombre completo:</label>
+      <br>
+      <input name="Nombre_4" type="text" required="required" id="Nombre_4" placeholder="escribe tu nombre...">
+<label for="Nacimiento">fecha de nacimiento:</label>
+      <input type="date" name="Nacimiento" id="Nacimiento">
+<br>
+      <label for="email2">correo electronico:</label>
+      <br>
+      <input name="email2" type="email" required="required" id="email2" placeholder="ejemplo@correo.com"><br>
+      <label for="tel">telefono:</label>
+      <br>
+      <input type="tel" name="tel" id="tel"><br>
+      <label for="color">color favorito:</label>
+      <br>
+      <input name="color" type="color" id="color" value="#000000"><br>
+      <label for="Domicilio">domicilio:</label>
+      <br>
+      <textarea name="Domicilio" required="required" id="Domicilio" placeholder="escribe tu dirección..."></textarea>
+      <br><br>
+<input type="submit" name="submit" id="submit" value="enviar">
+      <input type="reset" name="reset" id="reset" value="restablecer">
+      
+      
+    </form>
+  </section>
+</main>
+<footer>
+  <h6>elaborado por miriam gonzález flores</h6>
+</footer>
+</body>
+</html>

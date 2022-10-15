@@ -1,0 +1,372 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>documento sin título</title>
+<link href="../Css/style_page.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header>
+  <h1>tablas en HTML</h1>
+</header>
+<nav>
+  <ul>
+    <li><a href="mi_primer_archivo_formatos de texto.html">formularios de texto</a></li>
+    <li><a href="listas.html">listas en html</a></li>
+			<li><a href="enlaces.html">enlaces en html</a></li>
+			<li><a href="imagenes.html">imagenes</a></li>
+			<li><a href="audio.html">audio</a></li>
+	<li><a href="videos.html">videos en html</a></li>
+    <li><a href="formularios.html">formularios</a></li>
+    <li><a href="../index.html">inicio</a></li>
+  </ul>
+</nav>
+<main>
+  <section>
+    <h2>tabla desde codigo</h2>
+    <p>lorem ipsum dolor sit amet, consectetur adipisicing elit. laudantium, necessitatibus eaque eligendi beatae ipsum expedita tenetur modi corporis impedit libero quia ea. sit eum ducimus blanditiis beatae sunt, laborum nemo facere? consequatur similique facilis, dolore doloremque autem odio nemo molestiae, alias. nostrum, dignissimos nam consequuntur debitis laborum ratione mollitia, accusantium.</p>
+    <table id="tabla_1">
+	  <thead>
+		  <tr>
+			 <th>nombre</th>
+			  <th>taller</th>
+			  <th>email</th>
+			  <th>cuota de taller</th>
+		  </tr>
+		  </thead>
+		  <tbody>
+		  <tr>
+			 <td>rosa lopez</td>
+			  <td>pintura</td>
+			  <td>rosa@gmail.com</td>
+			  <td>$800</td>
+			</tr>
+			<tr>
+			 <td>rodrigo gomez</td>
+			  <td>fotografía</td>
+			  <td>rodriguito@gmail.com</td>
+			  <td>$1200</td>
+			</tr>
+			<tr>
+			 <td>feronica castro</td>
+			  <td>fotografía</td>
+			  <td>vero@outlook.com</td>
+			  <td>$1200</td>
+			</tr>
+			<tr>
+			 <td>fernando perez</td>
+			  <td>alfarería</td>
+			  <td>fer@gmail.com</td>
+			  <td>$1500</td>
+			  </tr>
+			<tr>
+				<td>miguel díaz</td>
+			  <td>pintura</td>
+			  <td>mike@outlook.com</td>
+			  <td>$800</td>
+			</tr>
+		  </tbody>
+		  <tfoot>
+			<tr>
+			  <td></td>
+			  <td></td>
+			 <td>Total de inscripción</td>
+			  <td>$5500</td>
+			</tr>
+		  </tfoot>
+	  </table>
+</section>
+  <section>
+    <h2>tabla con estilo css y uso de rowspan</h2>
+    <p>lorem ipsum dolor sit amet, consectetur adipisicing elit. laudantium, necessitatibus eaque eligendi beatae ipsum expedita tenetur modi corporis impedit libero quia ea. sit eum ducimus blanditiis beatae sunt, laborum nemo facere? consequatur similique facilis, dolore doloremque autem odio nemo molestiae, alias. nostrum, dignissimos nam consequuntur debitis laborum ratione mollitia, accusantium.</p>
+    <table id="tabla_2">
+      <thead>
+        <tr>
+          <th>nombre</th>
+          <th>taller</th>
+          <th>email</th>
+          <th>cuota de taller</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>rosa lopez</td>
+          <td>pintura</td>
+          <td>rosa@gmail.com</td>
+          <td>$800</td>
+        </tr>
+        <tr>
+          <td>rodrigo gomez</td>
+          <td>fotografía</td>
+          <td>rodriguito@gmail.com</td>
+          <td>$1200</td>
+        </tr>
+        <tr>
+          <td>veronica castro</td>
+          <td>fotografía</td>
+          <td>vero@outlook.com</td>
+          <td>$1200</td>
+        </tr>
+        <tr>
+          <td>fernando perez</td>
+          <td>alfarería</td>
+          <td>fer@gmail.com</td>
+          <td>$1500</td>
+        </tr>
+        <tr>
+          <td>miguel díaz</td>
+          <td>pintura</td>
+          <td>mike@outlook.com</td>
+          <td>$800</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <!--<td></td>
+          <td></td>-->
+          <td colspan="3" style="background-color: #68083B; font-weight: 200; color: #ECD9D9">total de inscripción</td>
+          <td>$5500</td>
+        </tr>
+      </tfoot>
+    </table>
+  </section>
+  <section>
+    <h2>tabla con cebras en horizontal o filas</h2>
+    <p>lorem ipsum dolor sit amet, consectetur adipisicing elit. laudantium, necessitatibus eaque eligendi beatae ipsum expedita tenetur modi corporis impedit libero quia ea. sit eum ducimus blanditiis beatae sunt, laborum nemo facere? consequatur similique facilis, dolore doloremque autem odio nemo molestiae, alias. nostrum, dignissimos nam consequuntur debitis laborum ratione mollitia, accusantium.</p>
+    <table width="100%" border="1" cellspacing="5" id="tabla_3">
+      <thead>
+        <tr>
+          <th scope="col">&nbsp;nombre</th>
+          <th scope="col">corre electronico&nbsp;</th>
+          <th scope="col">&nbsp;teléfono</th>
+          <th scope="col">edad&nbsp;</th>
+          <th scope="col">deporte&nbsp;</th>
+        </tr>
+      </thead>
+		<tbody>
+      <tr>
+        <td>&nbsp;luis lezama</td>
+        <td>&nbsp;luizlezama@gmail.com</td>
+        <td>&nbsp;5554257457</td>
+        <td>&nbsp;15</td>
+        <td>&nbsp;fútbol</td>
+      </tr>
+      <tr>
+        <td>&nbsp;angela solis</td>
+        <td>&nbsp;angelita_solis@gmail.com</td>
+        <td>&nbsp;2222478475</td>
+        <td>15</td>
+        <td>&nbsp;danza</td>
+      </tr>
+      <tr>
+        <td>&nbsp;mariana fernandez</td>
+        <td>&nbsp;mari12@gmail.com</td>
+        <td>&nbsp;2226784585</td>
+        <td>&nbsp;12</td>
+        <td>&nbsp;basquetbol</td>
+      </tr>
+      <tr>
+        <td>&nbsp;nancy aguilar</td>
+        <td>&nbsp;nancy_15@gmail.com</td>
+        <td>&nbsp;2221458769</td>
+        <td>&nbsp;15</td>
+        <td>&nbsp;beisbol</td>
+      </tr>
+    </tbody>
+  
+    </table>
+</section>
+<section>
+    <h2>tabla con cebras en vertical o columna</h2>
+    <p>lorem ipsum dolor sit amet, consectetur adipisicing elit. laudantium, necessitatibus eaque eligendi beatae ipsum expedita tenetur modi corporis impedit libero quia ea. sit eum ducimus blanditiis beatae sunt, laborum nemo facere? consequatur similique facilis, dolore doloremque autem odio nemo molestiae, alias. nostrum, dignissimos nam consequuntur debitis laborum ratione mollitia, accusantium.</p>
+    <table width="100%" border="1" cellspacing="5" id="tabla_4">
+      <thead>
+        <tr>
+          <th scope="col">&nbsp;nombre</th>
+          <th scope="col">corre electronico&nbsp;</th>
+          <th scope="col">teléfono</th>
+          <th scope="col">edad&nbsp;</th>
+          <th scope="col">deporte&nbsp;</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>&nbsp;luis lezama</td>
+          <td>&nbsp;luizlezama@gmail.com</td>
+          <td>&nbsp;5554257457</td>
+          <td>&nbsp;15</td>
+          <td>&nbsp;fútbol</td>
+        </tr>
+        <tr>
+          <td>&nbsp;angela solis</td>
+          <td>&nbsp;angelita_solis@gmail.com</td>
+          <td>&nbsp;2222478475</td>
+          <td>15</td>
+          <td>&nbsp;danza</td>
+        </tr>
+        <tr>
+          <td>&nbsp;mariana fernandez</td>
+          <td>&nbsp;mari12@gmail.com</td>
+          <td>&nbsp;2226784585</td>
+          <td>&nbsp;12</td>
+          <td>&nbsp;basquetbol</td>
+        </tr>
+        <tr>
+          <td>&nbsp;nancy aguilar</td>
+          <td>&nbsp;nancy_15@gmail.com</td>
+          <td>&nbsp;2221458769</td>
+          <td>&nbsp;15</td>
+          <td>&nbsp;beisbol</td>
+        </tr>
+      </tbody>
+    </table>
+</section>
+  <section>
+    <h2>tabla flotante (hover)</h2>
+    <p>lorem ipsum dolor sit amet, consectetur adipisicing elit. laudantium, necessitatibus eaque eligendi beatae ipsum expedita tenetur modi corporis impedit libero quia ea. sit eum ducimus blanditiis beatae sunt, laborum nemo facere? consequatur similique facilis, dolore doloremque autem odio nemo molestiae, alias. nostrum, dignissimos nam consequuntur debitis laborum ratione mollitia, accusantium.</p>
+    <table width="100%" border="1" cellspacing="5" id="tabla_5">
+      <thead>
+        <tr>
+          <th scope="col">&nbsp;nombre</th>
+          <th scope="col">corre electronico&nbsp;</th>
+          <th scope="col">&nbsp;teléfono</th>
+          <th scope="col">edad&nbsp;</th>
+          <th scope="col">deporte&nbsp;</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>&nbsp;luis lezama</td>
+          <td>&nbsp;luizlezama@gmail.com</td>
+          <td>&nbsp;5554257457</td>
+          <td>&nbsp;15</td>
+          <td>&nbsp;fútbol</td>
+        </tr>
+        <tr>
+          <td>&nbsp;angela solis</td>
+          <td>&nbsp;angelita_solis@gmail.com</td>
+          <td>&nbsp;2222478475</td>
+          <td>15</td>
+          <td>&nbsp;danza</td>
+        </tr>
+        <tr>
+          <td>&nbsp;mariana fernandez</td>
+          <td>&nbsp;mari12@gmail.com</td>
+          <td>&nbsp;2226784585</td>
+          <td>&nbsp;12</td>
+          <td>&nbsp;basquetbol</td>
+        </tr>
+        <tr>
+          <td>&nbsp;nancy aguilar</td>
+          <td>&nbsp;nancy_15@gmail.com</td>
+          <td>&nbsp;2221458769</td>
+          <td>&nbsp;15</td>
+          <td>&nbsp;beisbol</td>
+        </tr>
+      </tbody>
+    </table>
+</section>
+  <section>
+    <h2>tabla receptiva</h2>
+    <p>&nbsp;</p>
+<p>lorem ipsum dolor sit amet, consectetur adipisicing elit. laudantium, necessitatibus eaque eligendi beatae ipsum expedita tenetur modi corporis impedit libero quia ea. sit eum ducimus blanditiis beatae sunt, laborum nemo facere? consequatur similique facilis, dolore doloremque autem odio nemo molestiae, alias. nostrum, dignissimos nam consequuntur debitis laborum ratione mollitia, accusantium.</p>
+<div id="tabla_receptiva">
+  <table border="1" cellspacing="5" id="tabla_6">
+	  <thead>
+		  <tr>
+        <th scope="col">nombre&nbsp;</th>
+        <th scope="col">puntos</th>
+        <th scope="col">puntos</th>
+        <th scope="col">puntos</th>
+        <th scope="col">puntos</th>
+        <th scope="col">puntos</th>
+        <th scope="col">puntos</th>
+        <th scope="col">puntos</th>
+        <th scope="col">puntos</th>
+        <th scope="col">puntos</th>
+        <th scope="col">puntos</th>
+        <th scope="col">puntos</th>
+        <th scope="col">puntos</th>
+        <th scope="col">puntos</th>
+        <th scope="col">puntos</th>
+      </tr>
+	  </thead>
+    <tbody>
+      <tr>
+        <td>&nbsp;julian</td>
+        <td>&nbsp;45</td>
+        <td>&nbsp;52</td>
+        <td>&nbsp;25</td>
+        <td>&nbsp;36</td>
+        <td>&nbsp;54</td>
+        <td>&nbsp;95</td>
+        <td>&nbsp;44</td>
+        <td>&nbsp;65</td>
+        <td>&nbsp;75</td>
+        <td>24</td>
+        <td>&nbsp;87</td>
+        <td>&nbsp;74</td>
+        <td>&nbsp;14</td>
+        <td>&nbsp;55</td>
+      </tr>
+      <tr>
+        <td>&nbsp;mariana</td>
+        <td>&nbsp;90</td>
+        <td>&nbsp;10</td>
+        <td>&nbsp;100</td>
+        <td>25</td>
+        <td>48</td>
+        <td>&nbsp;47</td>
+        <td>&nbsp;74</td>
+        <td>&nbsp;68</td>
+        <td>74</td>
+        <td>&nbsp;100</td>
+        <td>&nbsp;74</td>
+        <td>&nbsp;85</td>
+        <td>&nbsp;90</td>
+        <td>&nbsp;100</td>
+      </tr>
+      <tr>
+        <td>&nbsp;yareli</td>
+        <td>&nbsp;30</td>
+        <td>&nbsp;54</td>
+        <td>&nbsp;78</td>
+        <td>&nbsp;74</td>
+        <td>&nbsp;98</td>
+        <td>&nbsp;74</td>
+        <td>&nbsp;12</td>
+        <td>&nbsp;45</td>
+        <td>&nbsp;75</td>
+        <td>&nbsp;57</td>
+        <td>&nbsp;100</td>
+        <td>&nbsp;45</td>
+        <td>&nbsp;70</td>
+        <td>&nbsp;98</td>
+      </tr>
+      <tr>
+        <td>&nbsp;sarah</td>
+        <td>&nbsp;100</td>
+        <td>&nbsp;58</td>
+        <td>&nbsp;52</td>
+        <td>&nbsp;47</td>
+        <td>&nbsp;35</td>
+        <td>&nbsp;35</td>
+        <td>&nbsp;32</td>
+        <td>&nbsp;98</td>
+        <td>&nbsp;35</td>
+        <td>&nbsp;58</td>
+        <td>96</td>
+        <td>&nbsp;66</td>
+        <td>&nbsp;100</td>
+        <td>&nbsp;100</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+</main>
+<footer>
+  <h6>elaborado por miriam gonzález flores</h6>
+</footer>
+</body>
+</html>

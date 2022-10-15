@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+<title>listas en html</title>
+<style type="text/css">
+body header {
+	height: 400px;
+	background-color: #067D96;
+	padding-top: 150px;
+}
+body header, body nav, body main, body footer {
+	width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+body nav {
+    background-color: #090875;
+    height: 80px;
+    color: #A63CEB;
+}
+body main {
+	padding: 50px;
+	background-color: #05AADD;
+}
+body footer {
+	background-color: #140D4C;
+	height: 100px;
+	padding-top: 40px;
+}
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body header h1 {
+	width: 800px;
+	height: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-size: 72px;
+}
+body footer h6 {
+	text-align: center;
+	font-size: 18px;
+	color: #E3B5F0;
+	height: 20px;
+}
+body main section {
+    width: 800px;
+    background-color: #DFC9C7;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    padding: 30px;
+    margin-right: auto;
+    height: auto;
+}
+main section h2 {
+	padding-bottom: 20px;
+}
+section ul  , section ol{
+	padding-right: 30px;
+	padding-left: 30px;
+	padding-top: 10px;
+}
+#lista_1 li {
+    list-style-type: lower-alpha;
+}
+section ul li {
+    list-style-type: square;
+}
+.lista_2 li {
+    list-style-image: url(../medios/iconos/rueda-de-color-vineta.png);
+}
+#menu {
+}
+#menu li {
+    padding: 30px;
+    list-style-type: none;
+    width: 150px;
+    display: inline-block;
+    text-align: center;
+    color: #DFC9C7;
+}
+#menu li a:link, #menu li a:visited {
+    color: #E7AF96;
+}
+</style>
+</head>
+
+<body>
+<header>
+  <h1>listas en html</h1>
+</header>
+<nav>
+  <ul id="menu">
+    <li><a href="mi_primer_archivo_formatos de texto.html">formularios de texto</a></li>
+			<li><a href="enlaces.html">enlaces en html</a></li>
+			<li><a href="tablas.html">tablas en html</a></li>
+			<li><a href="imagenes.html">imagenes</a></li>
+			<li><a href="audio.html">audio</a></li>
+	<li><a href="videos.html">videos en html</a></li>
+    <li><a href="formularios.html">formularios</a></li>
+    <li><a href="../index.html">inicio</a></li>
+  </ul>
+</nav>
+<main>
+  <section>
+    <h2>lista desordenada</h2>
+    <p>lorem ipsum dolor sit amet, consectetur adipisicing elit. atque molestiae laudantium fuga officiis sapiente possimus repellendus perspiciatis consequuntur a esse deleniti inventore repellat odit dolorum dolorem accusamus omnis rem minus, architecto sunt. cum praesentium quae, fugiat error repellat rerum, iure expedita ad, ratione, ab mollitia at voluptate corporis assumenda perspiciatis! doloribus veritatis, a sit atque modi excepturi quasi culpa maxime natus, nobis, porro sunt quas. laudantium eum, harum ab voluptas fugiat consectetur nemo dolorum, ipsa atque voluptates eius ex soluta, illum commodi aspernatur maiores! cupiditate dolor debitis modi non consequuntur sint quia eius! dolor ab suscipit veritatis consequatur, quo quia!</p>
+	  <ul class="lista_2">
+	  <li> margaritas </li>
+	  <li> rosas</li>
+	  <li> violetas </li>
+	  <li> claveles </li>
+	  <li> hortencias </li>
+    </ul>
+  </section>
+<section>
+    <h2>lista ordenada&nbsp;</h2>
+    <p>lorem ipsum dolor sit amet, consectetur adipisicing elit. ut debitis maxime similique id pariatur quos labore nihil neque temporibus voluptatibus eligendi expedita dicta impedit reiciendis laboriosam officiis rem non est soluta exercitationem ipsam, reprehenderit voluptatum hic. animi, nobis accusantium, quibusdam commodi dignissimos quasi, pariatur, itaque illum labore veniam fuga tempora.</p>
+    <ol>
+      <li>brenda garcia</li>
+      <li>elias baez</li>
+      <li>fernando lara</li>
+      <li>ricardo perez&nbsp; &nbsp;</li>
+<li>alejandra marinez&nbsp;</li>
+    </ol>
+</section>
+  <section>
+    <h2>lista mixta</h2>
+    <p>lorem ipsum dolor sit amet, consectetur adipisicing elit. atque molestiae laudantium fuga officiis sapiente possimus repellendus perspiciatis consequuntur a esse deleniti inventore repellat odit dolorum dolorem accusamus omnis rem minus, architecto sunt. cum praesentium quae, fugiat error repellat rerum, iure expedita ad, ratione, ab mollitia at voluptate corporis assumenda perspiciatis! doloribus veritatis, a sit atque modi excepturi quasi culpa maxime natus, nobis, porro sunt quas. laudantium eum, harum ab voluptas fugiat consectetur nemo dolorum, ipsa atque voluptates eius ex soluta, illum commodi aspernatur maiores! cupiditate dolor debitis modi non consequuntur sint quia eius! dolor ab suscipit veritatis consequatur, quo quia!</p>
+	  <ol>
+	  	<li>estados unidos</li>
+		 <li>españa</li>
+		 <li>méxico</li>
+		 <ul>
+			<li>puebla</li>
+			<li>colima</li>
+			<li>aguascalientes</li>
+			<li> veracruz</li>
+			<li>monterrey</li>
+		  </ul>
+		  <li>brasil</li>
+		  <li>italia</li>
+	  </ol>
+    </section>
+  <section>
+    <h2>lista modificada con una regla de identificador</h2>
+    <p>lorem ipsum dolor sit amet, consectetur adipisicing elit. ut debitis maxime similique id pariatur quos labore nihil neque temporibus voluptatibus eligendi expedita dicta impedit reiciendis laboriosam officiis rem non est soluta exercitationem ipsam, reprehenderit voluptatum hic. animi, nobis accusantium, quibusdam commodi dignissimos quasi, pariatur, itaque illum labore veniam fuga tempora.</p>
+    <ul id="lista_1">
+      <li>seat</li>
+      <li>vw&nbsp;</li>
+      <li>mazda</li>
+      <li>ford&nbsp;</li>
+<li>audi</li>
+      <li>renault</li>
+      <li>kia&nbsp;</li>
+    </ul>
+  </section>
+  <section>
+    <h2>lista desordenada</h2>
+    <p>lorem ipsum dolor sit amet, consectetur adipisicing elit. atque molestiae laudantium fuga officiis sapiente possimus repellendus perspiciatis consequuntur a esse deleniti inventore repellat odit dolorum dolorem accusamus omnis rem minus, architecto sunt. cum praesentium quae, fugiat error repellat rerum, iure expedita ad, ratione, ab mollitia at voluptate corporis assumenda perspiciatis! doloribus veritatis, a sit atque modi excepturi quasi culpa maxime natus, nobis, porro sunt quas. laudantium eum, harum ab voluptas fugiat consectetur nemo dolorum, ipsa atque voluptates eius ex soluta, illum commodi aspernatur maiores! cupiditate dolor debitis modi non consequuntur sint quia eius! dolor ab suscipit veritatis consequatur, quo quia!</p>
+    <ul class="lista_2">
+      <li> margaritas </li>
+      <li> rosas</li>
+      <li> violetas </li>
+      <li> claveles </li>
+      <li> hortencias </li>
+    </ul>
+  </section>
+</main>
+<footer>
+  <h6>elaborado por miriam gonzález flores&nbsp;</h6>
+</footer>
+</body>
+</html>
